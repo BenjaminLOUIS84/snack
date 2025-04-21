@@ -771,7 +771,7 @@ input[type='submit'] {
         display: flex;
         flex-direction: column;
         font-family: var(--police-primary);
-        background: url("images/Logo SARL Louis (3).png");
+        background: url("images/photo (11).jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -785,7 +785,7 @@ input[type='submit'] {
         display: flex;
         justify-content: center;
         height: max-content;
-       /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), var(--color-primary));*/
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), var(--color-primary));
         /*Faire apparaitre cet élément*/
         animation: appear 1s; 
         transition: ease-in-out 0.5s; 
