@@ -182,7 +182,6 @@ figcaption {
 .getStart h2 {
     padding-top: 120px;
     padding-bottom: 120px;
-    backdrop-filter: brightness(0.5);
 }
 
 
