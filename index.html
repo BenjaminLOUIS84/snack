@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu.html">
+        <link rel="stylesheet" href="carte.html">
+        <link rel="stylesheet" href="a-propos.html">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Page d'accueil du Snack du Camping de l'Isle Saint Jean Rue Tardy 89270 Arcy-Sur-Cure.
+        En savoir plus à propos du Snack du Camping de l'Isle Saint Jean,
+        découvrir les horaires pour les services du midi et du soir, les jours d'ouvertures et de fermeture. 
+        Consulter la carte des plats et la carte des boissons en ligne.
+        Contacter le Snack avec le formulaire de contact pour effectuer une résevation dans l'établissment.">
+       
+        <title>Le Snack du Camping de l'Isle Saint Jean</title>
+      </head>
+
+      <body>
+        <div id="wrapper">
+      
+          <div class="head">
+            <div class="name">
+              <figure>
+                <img class="size" src="images/logoBenjaminLouis.png" alt="Logo de Benjamin Louis">
+              </figure>
+            </div>
+      
+            <!-- MENU BURGER -->
+            <div class="burger">
+              <a href="menu.html"><img src="./images/burger.png" class="meal" alt="Icône du menu burger" title="Menu"></a>
+            </div>
+      
+          </div>
+      
+          <header>
+            <nav>
+              <div class="menu">
+                <a href="">Accueil</a>
+                <a href="a-propos.html">A propos</a>
+                <a href="carte.html">La Carte</a>
+              </div>
+            </nav>
+          </header>
+      
+        </div>
+      
+        <!--COEUR DE LA PAGE Le main contient toutes les sections de la page  -->
+        <main>
+      
+          <section class="accueil">
+            <figure>
+              <img class="illustration" src="images/photoBenjaminLouis.png" alt="Photo portrait de Benjamin Louis">
+            </figure>
+            <h1>Le Snack du Camping de l'Isle Saint Jean</h1>
+      
+            <figcaption>
+              Tout comme en cuisine, où il est question de concevoir un bon plat à partir d'une recette et de quelques
+              ingrédients,<br>
+              j'ai toujours cultivé mon goût pour l'informatique et j'ai décidé de me reconvertir.<br>
+              <br>Mon choix de carrière s'est porté sur le métier de Développeur Web et Web Mobile<br>
+              afin de de créer des sites web visant à répondre de manière efficace aux besoins.<br>
+              <br>Je suis à l'écoute des opportunités qui me permettront de mettre à votre service, mes compétences en
+              matière de solutions digitales.
+            </figcaption>
+            <a href="#ancre" class="ancre">Réservez une Table</a>
+          </section>
+      
+          <section id="contact" class="section-contact"> <!--Pour créer un formulaire de contact-->
+            <h2 id="ancre">Votre réservation</h2>
+            <form method="post" action="mail.php">
+              <div class="form-nom-email">
+                <div class="form-column">
+                  <label for="nom">Votre nom</label>
+                  <input type="text" name="nom" id="nom" required pattern="^[A-Za-z '-]+$" maxlength="20"
+                    title="20 caractères max">
+                </div>
+                <div class="form-column">
+                  <label for="email">Votre email</label>
+                  <input type="email" name="email" id="email" required pattern="^[A-Za-z0-9]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$">
+                </div>
+              </div>
+              <label for="mess">Votre message
+              </label><br> <textarea name="message" id="mess" rows=5 required pattern="^[A-Za-z '-]+$" maxlength="500"
+                title="500 caractères max"></textarea>
+              <input type="submit" value="ENVOYER" class="ancre">
+            </form>
+          </section>
+      
+          <div id="info">
+            <div class="pied">
+      
+              <figure>
+                <a href=""><img class="size" src="images/logoBenjaminLouis.png" alt="Logo de Benjamin Louis"></a>
+              </figure>
+      
+              <div class="reseaux">
+                <a href="https://www.camping-islesaintjean-arcysurcure.fr/fr/"><img class="ico" src="images/linkedin.jpg"
+                    alt="Lien vers le Site Web du Camping de l'Isle Saint Jean" title="Site Web du Camping"></a>
+               
+              </div>
+            </div>
+      
+          </div>
+      
+        </main>
+      
+       
+      
+      </body>
+
+</html>
