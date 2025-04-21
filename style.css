@@ -771,9 +771,9 @@ input[type='submit'] {
         display: flex;
         flex-direction: column;
         font-family: var(--police-primary);
-        /* background: url("images/numerique.jpg"); */
-        /* background-size: cover; */
-        /* background-repeat: no-repeat; */
+        background: url("images/photo (8).jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     a {
@@ -819,7 +819,9 @@ input[type='submit'] {
     .home {
         width: 20%;
         filter: invert();
+        padding-top: 40px;
     }
+
 
     /*////////////////////////////OUTILS///////////////////////////*/
 
