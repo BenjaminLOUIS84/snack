@@ -180,8 +180,18 @@ figcaption {
 }
 
 .getStart h2 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    backdrop-filter: brightness(0.5);
+}
+
+
+
+h3{
+    color: var(--color-secondary) ;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    font-size: x-large;
+    padding-bottom: 50px;
 }
 
 /* OUTILS///////////////////////////////////////////////////////////////////// */
