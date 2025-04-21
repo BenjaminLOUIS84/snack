@@ -191,7 +191,7 @@ h3{
     color: var(--color-secondary) ;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     font-size: x-large;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 /* OUTILS///////////////////////////////////////////////////////////////////// */
@@ -710,6 +710,7 @@ input[type='submit'] {
     h1 {
         font-size: 1.5em;
         text-align: center;
+        padding: 60px;
     }
 
     h2 {
