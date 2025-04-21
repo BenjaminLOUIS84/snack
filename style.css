@@ -129,9 +129,6 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
-    filter:invert(100%);
-}
 
 figcaption {
 
@@ -178,7 +175,7 @@ figcaption {
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
-    filter: brightness(50%);
+    filter:brightness(0.5);
 }
 
 .getStart h2 {
@@ -480,6 +477,7 @@ input[type='submit'] {
 
 .ico {
     width: 30%;
+    margin-left: 50px;
 }
 
 /*///////////////////////////////////////RESPONSIVE/////////////////////////////////////////*/
