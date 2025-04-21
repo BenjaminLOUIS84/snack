@@ -129,6 +129,10 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    filter:invert(100%);
+}
+
 figcaption {
 
     color: var(--color-secondary);
