@@ -205,7 +205,8 @@ h3{
 }
 
 .sizeM {
-    width: 70%;
+    width: 400%;
+    padding-bottom: 40px;
 }
 
 .container5 {
@@ -417,7 +418,7 @@ input[type='submit'] {
     color: var(--color-secondary);
     border-right: 1px solid var(--color-third);
     border-bottom: 1px solid var(--color-third);
-    padding: 50px;
+    padding: 20px;
     width: 50%;
     margin: auto;
     margin-bottom: 80px;
@@ -708,7 +709,8 @@ input[type='submit'] {
     h1 {
         font-size: 1.5em;
         text-align: center;
-        padding: 60px;
+        padding: 35px;
+        margin-top: 50px;
     }
 
     h2 {
@@ -752,7 +754,8 @@ input[type='submit'] {
     }
 
     .sizeM {
-        width: 50%;
+        width: 110%;
+        padding-bottom: 40px;
     }
 
     /*////////////////////////////CONTACT///////////////////////////*/
