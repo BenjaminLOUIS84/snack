@@ -86,7 +86,7 @@ header {
 }
 
 .size {
-    width: 50%;
+    width: 40%;
 }
 
 
@@ -160,6 +160,7 @@ figcaption {
 
 .illustration {
     width: 100%;
+   
 }
 
 .accueil figure {
@@ -796,6 +797,7 @@ input[type='submit'] {
         display: flex;
         cursor: pointer;
         width: 70%;
+        margin-left: 30px;
 
     }
 
@@ -853,7 +855,8 @@ input[type='submit'] {
     }
 
     .ico {
-        width: 50%;
+        width: 30%;
+        margin-left: 110px;
     }
 
 }
