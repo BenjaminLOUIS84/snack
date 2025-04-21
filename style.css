@@ -170,7 +170,7 @@ figcaption {
 
 .getStart {
     color: var(--color-secondary);
-    background-image: url("images/parallax.png");
+    background-image: url("images/photo (7).jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
@@ -474,7 +474,7 @@ input[type='submit'] {
 }
 
 .ico {
-    width: 50%;
+    width: 30%;
 }
 
 /*///////////////////////////////////////RESPONSIVE/////////////////////////////////////////*/
