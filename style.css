@@ -218,39 +218,27 @@ h3{
 
 /*////////////////////////////////////CSS CAROUSEL////*/
 
-/* Animation Scroller les caroussels automatiquement*/
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-260px * 7));
-    }
-}
 
 .container6 {
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     justify-content: left;
     scroll-snap-type: x mandatory;
     flex-direction: row;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .container6 img {
     position: sticky;
-    width: 15%;
-    height: 10%;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
     flex-shrink: 0;
     scroll-snap-align: start;
-    padding-left: 20px;
+    padding-left: 0px;
 
-    /*Pour scroller auto*/
-    animation: scroll 30s linear infinite;
 }
 
 
@@ -774,6 +762,7 @@ input[type='submit'] {
         gap: 0;
     }
 
+   
     /*////////////////////////////MENU BURGER///////////////////////////*/
 
     .wrapperMenu {
