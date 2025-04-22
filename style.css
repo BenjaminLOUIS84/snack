@@ -490,6 +490,13 @@ input[type='submit'] {
     margin-left: 50px;
 }
 
+.frame {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
 /*///////////////////////////////////////RESPONSIVE/////////////////////////////////////////*/
 
 /*////////////////INSPECTER - BUREAU - PAGE WEB///////////////////*/
@@ -647,6 +654,7 @@ input[type='submit'] {
         gap: 0;
     }
 
+
 }
 
 /*TELEPHONE//////////////////////////////////////////////////////*/
@@ -736,7 +744,7 @@ input[type='submit'] {
     }
 
     .border {
-        width: 95%;
+        width: 100%;
     }
 
     .ancre {
@@ -847,6 +855,12 @@ input[type='submit'] {
 
     .container6 img {
         width: 35%;
+    }
+
+    .frame {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
 
     /*////////////////////////////FOOTER///////////////////////////*/
