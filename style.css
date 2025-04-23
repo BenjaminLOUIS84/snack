@@ -479,6 +479,11 @@ input[type='submit'] {
     margin-left: 50px;
 }
 
+.icoFB {
+    width: 70%;
+    margin-left: 50px;
+}
+
 .frame {
     width: 100%;
     padding-top: 30px;
@@ -510,6 +515,7 @@ input[type='submit'] {
         display: flex;
         justify-content: space-around;
         text-align: left;
+        padding: 10px;
     }
 
 }
@@ -888,8 +894,13 @@ input[type='submit'] {
     }
 
     .ico {
-        width: 30%;
-        margin-left: 110px;
+        width: 40%;
+        margin-left: 50px;
+    }
+
+    .icoFB {
+        width: 60%;
+        margin-left: 50px;
     }
 
 }
