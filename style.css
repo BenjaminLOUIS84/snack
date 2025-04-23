@@ -305,8 +305,8 @@ h3{
 
 .photo-hover {
     position: absolute;
-    top: 10px;
-    bottom: 13px;
+    top: 0px;
+    bottom: 0px;
     right: 0px;
     left: 320px;
     display: flex;
@@ -568,11 +568,17 @@ input[type='submit'] {
         display: flex;
         flex-direction: column;
         font-family: var(--police-primary);
-        background: url("images/Logo SARL Louis (3).png");
+        background: url("images/photo (11).jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
 
+    .wrapperMenu .ancre{
+        width: 60%;
+        margin-left: 160px;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
 
     nav {
         display: flex;
@@ -653,7 +659,23 @@ input[type='submit'] {
         gap: 0;
     }
 
+    .photo {
+        margin-left: 190px;
+    }
 
+    .ico {
+        width: 50%;
+    }
+
+    .photo-hover {
+        left: 190px;
+        top: 0px;
+        bottom: 0px;
+    }
+
+    .border {
+        width: 100%;
+    }
 }
 
 /*TELEPHONE//////////////////////////////////////////////////////*/
@@ -863,7 +885,7 @@ input[type='submit'] {
         top: 0px;
         right: 0px;
         left: 0px;
-        bottom: 7px;
+        bottom: 0px;
         width: 100%;
     }
 
