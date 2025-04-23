@@ -777,6 +777,13 @@ input[type='submit'] {
         background-repeat: no-repeat;
     }
 
+    .wrapperMenu .ancre{
+        width: 60%;
+        margin-left: 85px;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+
     a {
         font-size: 1.8em;
         padding: 1px;
@@ -791,7 +798,7 @@ input[type='submit'] {
         animation: appear 1s; 
         transition: ease-in-out 0.5s; 
         padding-top: 90px;
-        padding-bottom: 285px;
+        padding-bottom: 85px;
     }
 
     #menu {
@@ -803,6 +810,7 @@ input[type='submit'] {
     #menu a {
         color: white;
     }
+
 
     .meal {
         display: flex;
@@ -818,10 +826,11 @@ input[type='submit'] {
     }
 
     .home {
-        width: 20%;
-        filter: invert();
+        width: 60%;
         padding-top: 40px;
     }
+
+
 
 
     /*////////////////////////////OUTILS///////////////////////////*/
