@@ -39,6 +39,7 @@
             $nom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
             $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
             $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_VALIDATE_EMAIL);
+            $date = filter_input(INPUT_POST, 'date', FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_VALIDATE_EMAIL);
                
             if($nom && $message && $email){
 
@@ -47,8 +48,13 @@
                 $entete .= 'Reply-to' . $email;
                 
                 $message = '<h1>Message envoyé depuis la page Contact du Snack du Camping</h1>
-                <p><b>Email : </b>' . $email . '<br>
-                <b>Message : </b>' . htmlspecialchars($message) . '</p>';
+
+                <p>
+                <b>Email : </b>' . $email . '<br>
+                <b>Nom : </b>' .$nom . '<br>
+                <b>Date : </b>' .$date . '<br>
+                <b>Message : </b>' . htmlspecialchars($message) . '
+                </p>';
                 
                 $retour = mail('campingarcy@gmail.com', 'Envoi depuis la page Contact', $message, $entete);
                 

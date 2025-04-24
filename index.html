@@ -88,9 +88,16 @@
                   <label for="email">Votre email</label>
                   <input type="email" name="email" id="email" required pattern="^[A-Za-z0-9]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$">
                 </div>
+
+                <div class="form-column">
+                  <label for="date">A quelle date</label>
+                  <input type="date" name="date" id="date" required pattern="^[A-Za-z0-9]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$">
+                </div>
+
               </div>
-              <label for="mess">Votre message
-              </label><br> <textarea name="message" id="mess" rows=5 required pattern="^[A-Za-z '-]+$" maxlength="500"
+              <label for="mess">Votre message</label><br>
+              <p>Merci de préciser le nombre de personnes et le moment désiré (midi ou soir)</p><br>
+              <textarea name="message" id="mess" rows=5 required pattern="^[A-Za-z '-]+$" maxlength="500"
                 title="500 caractères max"></textarea>
               <input type="submit" value="ENVOYER" class="ancre">
             </form>
