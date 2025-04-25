@@ -89,6 +89,10 @@ header {
     width: 40%;
 }
 
+.sizeEvent {
+    width: 70%;
+}
+
 
 /* NAVIGATION ////////////////////////////////////////////////////////////////////*/
 
@@ -183,6 +187,19 @@ figcaption {
     padding-bottom: 260px;
 }
 
+.eventStart {
+    color: var(--color-secondary);
+    background-image: url("images/event.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    filter:brightness(0.5);
+}
+
+.eventStart h2 {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
 
 
 h3{
@@ -297,9 +314,20 @@ h3{
     margin-left: 320px;
 }
 
+.photoEvent {
+    width: 100%;
+    filter: grayscale(0%);
+    /* border: 1px solid black; */
+    box-shadow: 5px 10px 10px rgb(0, 0, 0);
+}
+
 /*  Pour créer un effet d'assombrissement avec informations sur les photos*/
 
 .lien-conteneur-photo {
+    position: relative;
+}
+
+.lien-conteneur-photoEvent {
     position: relative;
 }
 
@@ -322,6 +350,25 @@ h3{
     text-align: justify;
 }
 
+.photoEvent-hover {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: small;
+    color: white;
+    background: black;
+    opacity: 90%;
+    display: none;
+    transition: .5s ease-in-out;
+    width: 100%;
+    text-align: justify;
+}
+
 .inf {
     display: flex;
     flex-direction: column;
@@ -332,6 +379,10 @@ h3{
 
 /*Pour activer l'effet au passage de la souris*/
 .lien-conteneur-photo:hover .photo-hover {
+    display: flex;
+}
+
+.lien-conteneur-photoEvent:hover .photoEvent-hover {
     display: flex;
 }
 
@@ -389,6 +440,7 @@ textarea {
 
 label {
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 input[type='submit'] {
@@ -397,6 +449,10 @@ input[type='submit'] {
     margin-top: 30px;
     margin-bottom: 30px;
     cursor: pointer;
+}
+
+form p {
+    font-size: x-small;
 }
 
 
@@ -927,6 +983,10 @@ input[type='submit'] {
     .icoFB {
         width: 60%;
         margin-left: 50px;
+    }
+
+    .sizeEvent {
+        width: 100%;
     }
 
 }
