@@ -321,6 +321,13 @@ h3{
     box-shadow: 5px 10px 10px rgb(0, 0, 0);
 }
 
+.photoGlace {
+    width: 100%;
+    filter: grayscale(0%);
+    /* border: 1px solid black; */
+    box-shadow: 5px 10px 10px rgb(0, 0, 0);
+}
+
 /*  Pour créer un effet d'assombrissement avec informations sur les photos*/
 
 .lien-conteneur-photo {
@@ -328,6 +335,10 @@ h3{
 }
 
 .lien-conteneur-photoEvent {
+    position: relative;
+}
+
+.lien-conteneur-photoGlace {
     position: relative;
 }
 
@@ -369,12 +380,41 @@ h3{
     text-align: justify;
 }
 
+.photoGlace-hover {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: small;
+    color: white;
+    background: black;
+    opacity: 90%;
+    display: none;
+    transition: .5s ease-in-out;
+    width: 100%;
+    text-align: justify;
+}
+
 .inf {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
     font-size: larger;
+    padding: 10px;
+}
+
+.infG {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    font-size: small;
+    padding: 10px;
 }
 
 /*Pour activer l'effet au passage de la souris*/
@@ -383,6 +423,10 @@ h3{
 }
 
 .lien-conteneur-photoEvent:hover .photoEvent-hover {
+    display: flex;
+}
+
+.lien-conteneur-photoGlace:hover .photoGlace-hover {
     display: flex;
 }
 
@@ -541,6 +585,10 @@ form p {
 }
 
 .icoC10 {
+    width: 20%;
+}
+
+.icoDS {
     width: 20%;
 }
 
@@ -955,6 +1003,10 @@ form p {
         padding-bottom: 40px;
     }
 
+    .portfolio-section-photos h2 {
+        padding: 10px;
+    }
+
     /*////////////////////////////FOOTER///////////////////////////*/
 
     .reseaux {
@@ -984,9 +1036,14 @@ form p {
         width: 60%;
         margin-left: 50px;
     }
+    .icoDS {
+        width: 40%;
+    }
 
     .sizeEvent {
         width: 100%;
     }
+
+
 
 }
