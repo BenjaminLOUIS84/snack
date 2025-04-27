@@ -966,7 +966,15 @@ form p {
         padding-top: 40px;
     }
 
-
+    .eventStart {
+        color: var(--color-secondary);
+        background-image: url("images/event.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: top;
+        filter:brightness(0.5);
+    }
+    
 
 
     /*////////////////////////////OUTILS///////////////////////////*/
