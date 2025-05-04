@@ -17,9 +17,12 @@
         Contacter le Snack avec le formulaire de contact pour effectuer une résevation dans l'établissment.">
        
         <title>Le Snack du Camping de l'Isle Saint Jean</title>
+        
+
       </head>
 
       <body>
+        
         <div id="wrapper">
       
           <div class="head">
@@ -27,8 +30,15 @@
               <figure>
                 <img class="size" src="images/Logo_SARL_Louis__4_-removebg-preview.png" alt="Logo de SARL Louis">
               </figure>
+
             </div>
-      
+
+            <!-- SELECTION DE LA LANGUE FR OU EN -->
+            <select aria-label="label for the select" id="language-selector">
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+
             <!-- MENU BURGER -->
             <div class="burger">
               <a href="menu.html"><img src="./images/burger.png" class="meal" alt="Icône du menu burger" title="Menu"></a>
@@ -39,14 +49,13 @@
           <header>
             <nav>
               <div class="menu">
-                <a href="">Accueil</a>
-                <a href="a-propos.html">A propos</a>
-                <a href="carte.html">La Carte</a>
-                <a href="event.html">Evènements</a>
+                <a href="index.html" id="title" data-fr="Accueil" data-en="Welcome">Accueil</a>
+                <a href="a-propos.html" id="title1" data-fr="A propos" data-en="About">A propos</a>
+                <a href="carte.html" id="title2" data-fr="La Carte" data-en="The Card">La Carte</a>
+                <a href="event.html" id="title3" data-fr="Evènements" data-en="Events">Evènements</a>
               </div>
-            </nav>
-          </header>
-      
+            </nav> 
+          </header> 
         </div>
       
         <!--COEUR DE LA PAGE Le main contient toutes les sections de la page  -->
@@ -57,55 +66,86 @@
           
           <section class="accueil">
             
-            <h1>Le Snack & le Bar du Camping de l'Isle Saint Jean</h1>
+            <h1 id="title4" data-fr="Le Snack & le Bar du Camping de l'Isle Saint Jean"
+             data-en="The Snack & Bar at the Isle Saint Jean Campsite">Le Snack & le Bar du Camping de l'Isle Saint Jean
+            </h1>
       
-            <figcaption>
-              Bienvenue au Camping de l'Isle Saint Jean à Arcy-Sur-Cure.<br>
-              Cet établissement dispose d'un Snack pour vous restaurer et d'un Bar pour vous désaltérer.<br>
+            <p id="title5"
+              data-fr="Bienvenue au Camping de l'Isle Saint Jean à Arcy-Sur-Cure."
+              data-en="Welcome to the Isle Saint Jean campsite in Arcy-Sur-Cure.">
+              Bienvenue au Camping de l'Isle Saint Jean à Arcy-Sur-Cure.
+            </p><br>
 
-              <br>Le Snack et le Bar sont ouverts tous les jours sauf le mercredi.<br>
+            <p id="title6" 
+              data-fr="Cet établissement dispose d'un Snack pour vous restaurer et d'un Bar pour vous désaltérer."
+              data-en="This establishment has a snack bar for your meals and a bar for your drinks.">
+              Cet établissement dispose d'un Snack pour vous restaurer et d'un Bar pour vous désaltérer.
+            </p><br>
+            
+            <p id="title7" 
+              data-fr="Le Snack et le Bar sont ouverts tous les jours sauf le mercredi."
+              data-en="The snack bar and bar are open every day except Wednesday.">
+              Le Snack et le Bar sont ouverts tous les jours sauf le mercredi.
+            </p><br>
+            
+            <p id="title8" 
+              data-fr="Benjamin & Valérie vous propose une cuisine traditionnelle de qualité."
+              data-en="Benjamin & Valérie offer quality traditional cuisine.">
+              Benjamin & Valérie vous propose une cuisine traditionnelle de qualité.
+            </p><br>
+            
+            <br><p id="title9" 
+              data-fr="MIDI de 11h30 à 14h - SOIR de 19h à 21h30"
+              data-en="LUNCH from 11:30 a.m. to 2:00 p.m. - EVENING from 7:00 p.m. to 9:30 p.m.">
+              MIDI de 11h30 à 14h - SOIR de 19h à 21h30
+            </p><br>
 
-              <br>Benjamin & Valérie vous propose une cuisine traditionnelle de qualité<br>
-
-              <br>MIDI de 11h30 à 14h - SOIR de 19h à 21h30<br>
-              
-
-            </figcaption>
-            <a href="#ancre" class="ancre">Réservez une Table</a>
+            <br><a href="#ancre" class="ancre" id="title10" data-fr="Réserver une Table" data-en="Book a Table">Réservez une Table</a>
           </section>
 
           <section class="getStart">
             <h2></h2>
           </section>
-
-          <section id="contact" class="section-contact"> <!--Pour créer un formulaire de contact-->
-            <h3 id="ancre">Votre réservation</h3>
+          
+          <!--Pour créer un formulaire de contact-->
+          <section id="contact" class="section-contact"> 
+            <h3 id="ancre" data-fr="Votre réservation" data-en="Your reservation">Votre réservation</h3>
             <form method="post" action="mail.php">
               <div class="form-nom-email">
                 <div class="form-column">
-                  <label for="nom">Votre nom</label>
+                  <label for="nom" id="title11" data-fr="Votre nom" data-en="Your name">Votre nom</label>
                   <input type="text" name="nom" id="nom" required pattern="^[A-Za-z '-]+$" maxlength="20"
                     title="20 caractères max">
                 </div>
                 <div class="form-column">
-                  <label for="email">Votre email</label>
+                  <label for="email" id="title12" data-fr="Votre email" data-en="Your mail">Votre email</label>
                   <input type="email" name="email" id="email" required pattern="^[A-Za-z0-9]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$">
                 </div>
 
                 <div class="mess">
-                  <label for="date">Choisir une date</label><br>
-                  <br><p>Si vous souhaitez assister à un évènement<br>
+                  <label for="date" id="title13" data-fr="Choisir une date" data-en="Choose a date">Choisir une date</label><br>
+
+                  <br><p id="title14" data-fr="Si vous souhaitez assister à un évènement" data-en="If you would like to attend an event">
+                    Si vous souhaitez assister à un évènement</p>
+
+                  <p id="title15" data-fr="Merci de le préciser dans votre message" data-en="Please specify this in your message">
                     Merci de le préciser dans votre message</p><br>
+
                   <input type="date" name="date" id="date" required pattern="^[A-Za-z0-9]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$">
                 </div>
                 <br>
                                
               </div>
-              <label for="mess">Votre message</label><br>
-              <p>Merci de préciser le nombre de personnes et le moment désiré (midi ou soir)</p><br>
+              <label for="mess" id="title16" data-fr="Votre message" data-en="Your message">Votre message</label><br>
+
+              <p id="title17" data-fr="Merci de préciser le nombre de personnes et le moment désiré (midi ou soir)" 
+                data-en="Please specify the number of people and the desired time (lunch or evening)">
+                Merci de préciser le nombre de personnes et le moment désiré (midi ou soir)</p><br>
+
               <textarea name="message" id="mess" rows=5 required pattern="^[A-Za-z '-]+$" maxlength="500"
                 title="500 caractères max"></textarea>
-              <input type="submit" value="ENVOYER" class="ancre">
+
+              <input type="submit" value="OK" class="ancre">
             </form>
           </section>
       

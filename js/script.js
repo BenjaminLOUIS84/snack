@@ -9,3 +9,13 @@ function scrollFunction() {
   }
 
 }
+
+const languageSelector = document.getElementById('language-selector');
+          languageSelector.addEventListener('change', (event) => {
+              const selectedLanguage = event.target.value;
+              document.querySelectorAll('[id]').forEach(element => {
+                  if (element.dataset[selectedLanguage]) {
+                      element.textContent = element.dataset[selectedLanguage];
+                  }
+              });
+          });

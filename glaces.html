@@ -25,6 +25,12 @@
                     </figure>
                 </div>
 
+                <!-- SELECTION DE LA LANGUE FR OU EN -->
+                <select aria-label="label for the select" id="language-selector">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
+
                 <!-- MENU BURGER -->
                 <div class="burger">
                     <a href="menu.html"><img src="./images/burger.png" class="meal" alt="Icône du menu burger"
@@ -36,10 +42,10 @@
             <header>
                 <nav>
                     <div class="menu">
-                        <a href="index.html">Accueil</a>
-                        <a href="a-propos.html">A propos</a>
-                        <a href="carte.html">La Carte</a>
-                        <a href="event.html">Evènements</a>
+                        <a href="index.html" id="title" data-fr="Accueil" data-en="Welcome">Accueil</a>
+                        <a href="a-propos.html" id="title1" data-fr="A propos" data-en="About">A propos</a>
+                        <a href="carte.html" id="title2" data-fr="La Carte" data-en="The Card">La Carte</a>
+                        <a href="event.html" id="title3" data-fr="Evènements" data-en="Events">Evènements</a>
                     </div>
                 </nav>
             </header>
@@ -50,9 +56,11 @@
            
             <section class="portfolio-section-photos">
 
-                <h1>LES PARFUMS & LES SUPPLEMENTS</h1>
+                <h1 id="title4" data-fr="LES PARFUMS & LES SUPPLEMENTS"
+                    data-en="FLAVORS & SUPPLEMENTS">LES PARFUMS & LES SUPPLEMENTS
+                </h1>
 
-                <br><p>Parfums au Choix</p>
+                <br><p id="title5" data-fr="Parfums au Choix" data-en="Flavors at your choice">Parfums au Choix</p>
                 <div class="blocProjet">
                     <div class="lien-conteneur-photoGlace">
                         <figure>
@@ -61,16 +69,17 @@
                         </figure>
                         <div class="photoGlace-hover">
                             <div class="infG">
-                                <p>1 Boule à 2.00€ - 2 Boules à 3.50€</p><br>
-                                <p>Vanille - Chocolat - Pistache - Mangue - Noix de Coco - Menthe - Rhum Raisin - Café</p><br>
-                                <p>Suppléments Chantilly ou Amandes à 1€</p>
-                                <p>Suppléments Chocolat ou Miel à 1.50€</p>
+                                <p id="title6" data-fr="1 Boule à 2.00€ - 2 Boules à 3.50€" data-en="1 Scoop at 2.00€ - 2 Scoops at 3.50€">1 Boule à 2.00€ - 2 Boules à 3.50€</p><br>
+                                <p id="title7" data-fr="Vanille - Chocolat - Pistache - Mangue - Noix de Coco - Menthe - Rhum Raisin - Café" data-en="Vanilla - Chocolate - Pistachio - Mango - Coconut - Mint - Rum Raisin - Coffee">Vanille - Chocolat - Pistache - Mangue - Noix de Coco - Menthe - Rhum Raisin - Café</p><br>
+                                <p id="title8" data-fr="Suppléments Chantilly ou Amandes à 1€" data-en="Chantilly or Almond supplements at 1€">Suppléments Chantilly ou Amandes à 1€</p>
+                                <p id="title9" data-fr="Suppléments Chocolat ou Miel à 1.50€" data-en="Chocolate or Honey supplements at 1.50€">Suppléments Chocolat ou Miel à 1.50€</p>
                             </div>
                         </div>
                     </div>
                 </div>
             
-                <h2>LES GLACES A EMPORTER</h2>
+                <h2 id="title10" data-fr="LES GLACES A EMPORTER"
+                data-en="TAKEAWAY ICE CREAM">LES GLACES A EMPORTER</h2>
 
                 <br><p>Cônes</p>
                 <div class="blocProjet">
@@ -104,7 +113,10 @@
                         </div>
                     </div>
                 </div>
-                <h2>Notre Fournisseur de Glaces et de Produits Surgelés</h2>
+                <h2 id="title11" data-fr="Notre Fournisseur de Glaces et de Produits Surgelés"
+                    data-en="Our Supplier of Ice Cream and Frozen Products">Notre Fournisseur de Glaces et de Produits Surgelés
+                </h2>
+
                 <a href="https://www.ds-restauration.com/"><img class="icoDS" src="images/logo-ds.jpg"
                     alt="Lien vers Site Web de DISVAL" title="Site Web de DISVAL"></a>
 

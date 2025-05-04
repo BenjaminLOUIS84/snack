@@ -26,6 +26,12 @@
             </figure>
         </div>
 
+        <!-- SELECTION DE LA LANGUE FR OU EN -->
+        <select aria-label="label for the select" id="language-selector">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+        </select>
+
         <!-- MENU BURGER -->
         <div class="burger">
             <a href="menu.html"><img src="./images/burger.png" class="meal" alt="Icône du menu burger"
@@ -36,10 +42,10 @@
       <header>
           <nav>
               <div class="menu">
-                  <a href="index.html">Accueil</a>
-                  <a href="a-propos.html">A propos</a>
-                  <a href="carte.html">La Carte</a>
-                  <a href="event.html">Evènements</a>
+                <a href="index.html" id="title" data-fr="Accueil" data-en="Welcome">Accueil</a>
+                <a href="a-propos.html" id="title1" data-fr="A propos" data-en="About">A propos</a>
+                <a href="carte.html" id="title2" data-fr="La Carte" data-en="The Card">La Carte</a>
+                <a href="event.html" id="title3" data-fr="Evènements" data-en="Events">Evènements</a>
               </div>
           </nav>
       </header>
@@ -51,7 +57,9 @@
        
       
       <section class="accueilPortfolio">
-        <h1>EVENEMENTS</h1>
+        <h1 id="title4" data-fr="EVENEMENTS"
+          data-en="EVENTS">EVENEMENTS
+        </h1>
       </section>
       <section class="eventStart">
         <h2></h2>
@@ -67,7 +75,7 @@
                 </figure>
                 <div class="photoEvent-hover">
                     <div class="inf">
-                        <p>Réserver une table & Assister à l'évènement</p>
+                      <p id="title5" data-fr="Réserver une table & Assister à l'évènement" data-en="Book a table & Attend the event">Réserver une table & Assister à l'évènement</p>
                     </div>
                 </div>
             </a>
@@ -93,7 +101,9 @@
       </div>
      
     </main>
-      
+
+    <script src="js/script.js"></script>
+    
   </body>
 
 </html>

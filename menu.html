@@ -22,14 +22,22 @@
         <nav>
             <div id="menu">
                 
-                <a href="index.html"><img class="home" src="images/Logo_SARL_Louis__2_-removebg-preview.png" title="Retour à l'accueil"
-                        alt="Retour à la page d'accueil"></a>
-                <a href="a-propos.html">A propos</a>
-                <a href="carte.html">La Carte</a>
-                <a href="event.html">Evènements</a>
+              <a href="index.html"><img class="home" src="images/Logo_SARL_Louis__2_-removebg-preview.png" title="Retour à l'accueil"
+                alt="Retour à la page d'accueil">
+              </a>
+
+               <!-- SELECTION DE LA LANGUE FR OU EN -->
+              <select aria-label="label for the select" id="language-selector">
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+              </select>
+
+              <a href="a-propos.html" id="title1" data-fr="A propos" data-en="About">A propos</a>
+              <a href="carte.html" id="title2" data-fr="La Carte" data-en="The Card">La Carte</a>
+              <a href="event.html" id="title3" data-fr="Evènements" data-en="Events">Evènements</a>
             </div>
         </nav>
-        <a href="/index.html#ancre" class="ancre">Réservez une Table</a>
+        <a href="/index.html#ancre" class="ancre" id="title4" data-fr="Réserver une Table" data-en="Book a Table">Réservez une Table</a>
         <div id="info">
             <div class="pied">
       
@@ -48,7 +56,7 @@
       
           </div>
     </div>
-    
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -87,6 +87,7 @@ header {
 
 .size {
     width: 40%;
+    margin-left: 10px;
 }
 
 .sizeEvent {
