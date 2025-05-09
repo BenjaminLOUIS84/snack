@@ -33,7 +33,7 @@
 
             return;
         }
-
+ 
         if (isset($_POST['message'])){
 
             $nom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -48,14 +48,14 @@
                 $entete .= 'Reply-to' . $email;
                 
                 $message = '<h1>Message envoyé depuis la page Contact du Snack du Camping</h1>
-
+                
                 <p>
                 <b>Email : </b>' . $email . '<br>
                 <b>Nom : </b>' .$nom . '<br>
                 <b>Date : </b>' .$date . '<br>
-                <b>Message : </b>' . htmlspecialchars($message) . '
+                <b>Message : </b>' . html_entity_decode($message) . '
                 </p>';
-                
+
                 $retour = mail('campingarcy@gmail.com', 'Envoi depuis la page Contact', $message, $entete);
                 
                 if ($retour)
