@@ -13,8 +13,7 @@
 
         // Pour filtrer les données et ainsi sécuriser le formulaire
         // html_entity_decode() Pour gérer les caractères spéciaux
-            
-        
+
         $postData = $_POST;
 
         if (!isset($postData['email'])
@@ -34,6 +33,7 @@
 
             return;
         }
+
  
         if (isset($_POST['message'])){
 
