@@ -57,7 +57,7 @@
                 <b>Message : </b>' . html_entity_decode($message) . '
                 </p>';
 
-                $retour = mail('campingarcy@gmail.com', 'Envoi depuis la page Contact', $message, $entete);
+                $retour = mail('benbylouis1984@gmail.com', 'Envoi depuis la page Contact', $message, $entete);
                 
                 if ($retour)
                 echo 
